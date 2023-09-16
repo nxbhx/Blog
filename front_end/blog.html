@@ -52,15 +52,15 @@
             </div>
             <div class="ui attached segment">
                 <!-- 图片区域 -->
-                <img src="./static/images/background2.jpg" alt="" class="ui fluid rounded image">
+                <img src="./static/images/background2.jpg" alt="notfound" class="ui fluid rounded image">
             </div>
-            <div class="ui attached segment">
+            <div class="ui attached padded segment">
                 <!-- 内容 -->
                 <div class="ui right aligned basic segment">
                     <div class="ui orange basic label">原创</div>
                 </div>
                 <h2 class="ui center aligned header">这是一个标题</h2>
-                <div id="content" class="m-padded-lr">
+                <div id="content" class="m-padded-lr-responsive m-padded-tb-large">
                     <p>这是一段文字</p>
                     <p>这是一段文字</p>
                     <p>这是一段文字</p>
@@ -70,7 +70,7 @@
                     <br>
                 </div>
 
-                <div class="m-padded-lr">
+                <div class="m-padded-lr-responsive">
                     <div class="ui basic teal let label">这是一个标签</div>
                 </div>
 
@@ -96,9 +96,124 @@
             </div>
             <div class="ui attached positive message">
                 <!-- 博客信息 -->
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <ui class="list">
+                            <li>作者</li>
+                            <li>发表时间</li>
+                            <li>版权声明</li>
+                            <li>公众号转载</li>
+                        </ui>
+                    </div>
+                    <div class="five wide column">
+                        <img src="./static/images/wechat.png" alt="" class="ui right floated rounded borderde image" style="width:120px">
+                    </div>
+                </div>
             </div>
             <div class="ui bottom attached segment">
-                留言区
+                <!-- 留言区 -->
+                <div class="ui teal segment">
+                    <div class="ui threaded comments">
+                        <h3 class="ui dividing header">Comments</h3>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="./static/images/background2.jpg">
+                          </a>
+                          <div class="content">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                              <span class="date">Today at 5:42PM</span>
+                            </div>
+                            <div class="text">
+                              How artistic!
+                            </div>
+                            <div class="actions">
+                              <a class="reply">回复</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="./static/images/background2.jpg">
+                          </a>
+                          <div class="content">
+                            <a class="author">Elliot Fu</a>
+                            <div class="metadata">
+                              <span class="date">Yesterday at 12:30AM</span>
+                            </div>
+                            <div class="text">
+                              <p>This has been very useful for my research. Thanks as well!</p>
+                            </div>
+                            <div class="actions">
+                              <a class="reply">回复</a>
+                            </div>
+                          </div>
+                          <div class="comments">
+                            <div class="comment">
+                              <a class="avatar">
+                                <img src="./static/images/background2.jpg">
+                              </a>
+                              <div class="content">
+                                <a class="author">Jenny Hess</a>
+                                <div class="metadata">
+                                  <span class="date">Just now</span>
+                                </div>
+                                <div class="text">
+                                  Elliot you are always so right :)
+                                </div>
+                                <div class="actions">
+                                  <a class="reply">回复</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="./static/images/background2.jpg">
+                          </a>
+                          <div class="content">
+                            <a class="author">Joe Henderson</a>
+                            <div class="metadata">
+                              <span class="date">5 days ago</span>
+                            </div>
+                            <div class="text">
+                              Dude, this is awesome. Thanks so much
+                            </div>
+                            <div class="actions">
+                              <a class="reply">回复</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ui form">
+                        <div class="field">
+                            <textarea name="content" placeholder="请输入评论"></textarea>
+                        </div>
+                        <div class="fields">
+                          <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                              <i class="user icon"></i>
+                              <input type="text" namne="nickname" placeholder="姓名">
+                            </div>
+                            
+                          </div>
+                          <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                              <i class="mail icon"></i>
+                              <input type="text" name="email" placeholder="邮箱">
+                            </div>                            
+                          </div>
+                          <div class="field field m-mobile-wide m-margin-bottom-small">
+                            <button class="ui teal button m-mobile-wide">
+                              <i class="edit icon"></i>
+                              发布
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
             </div>
         </div>
     </div>
